@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <string.h>
+
+size_t strlen(char* pointer);
 
 int main(int argc, char* argv[])
 {
@@ -14,4 +15,17 @@ int main(int argc, char* argv[])
     printf("%s has %d chracters.", str, strLeng);
     
     return 0;
+}
+
+
+size_t strlen(char* pointer)
+{
+    size_t returnValue = 0;
+
+    while(pointer[returnValue] != '\0')
+    {
+       returnValue++; 
+    }
+
+    return returnValue;
 }
