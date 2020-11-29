@@ -7,6 +7,8 @@ class Ex01 {
         System.out.print("What is your name? ");
         String myName = scanner.next();
 
+        scanner.close();
+
         // String format 
         System.out.println(String.format("Hello, %s, nice to meet you!", myName));
         // System.out.printf("Hello, %s, nice to meet you!", myName);
