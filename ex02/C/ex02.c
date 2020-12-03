@@ -5,14 +5,11 @@ size_t strlen(char* pointer);
 int main(int argc, char* argv[])
 {
     char str[20] = {0};
-    int strLeng = 0;
 
     printf("What is the input String? ");
     scanf("%s", str);
-    
-    strLeng = strlen(str);
 
-    printf("%s has %d chracters.", str, strLeng);
+    printf("%s has %d chracters.", str, strlen(str));
     
     return 0;
 }
